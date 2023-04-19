@@ -67,6 +67,7 @@ public class HighEntropyRandomNumberGeneratorTest {
 			}
 		}
 		System.out.println(returnValues.toArray(Double[]::new).length);
+		System.out.println("Hello!");
 		boolean testResult = (new KolmogorovSmirnovTest()).kolmogorovSmirnovTest(new UniformRealDistribution(),
 				ArrayUtils.toPrimitive(returnValues.toArray(Double[]::new)), ALPHA);
 
